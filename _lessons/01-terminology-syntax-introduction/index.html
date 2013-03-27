@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Wile E. Coyote</title>
+    <title>Wile E. Coyote's Cheat Sheet</title>
     
     <meta name="description" content="The home of Wile E. Coyote while completing the beginners guide to HTML and CSS.">
     <meta name="viewport" content="width=device-width">
@@ -13,9 +13,181 @@
 
   </head>
   <body>
-
-    <h1>Wile E. Coyote</h1>
-    <p>Coming soon.</p>
-
-  </body>
+    <div class="container">
+      <h1>Wile E. Coyote's Cheat Sheet</h1>
+      <h2>HTML</h2>
+      <h3>Basic Tags</h3>
+      <ul>
+        <li>
+          <code>&lt;html&gt;...&lt;/html&gt;</code> An HTML document.
+        </li>
+        <li>
+          <code>&lt;head&gt;...&lt;/head&gt;</code> Header information (title, meta tags) that are not visible on the page.
+        </li>
+        <li>
+          <code>&lt;body&gt;...&lt;/body&gt;</code> The visible portion of the document.
+        </li>
+      </ul>
+      <h3>Text Tags</h3>
+      <ul>
+        <li>
+          <code>&lt;h1&gt;...&lt;/h1&gt;</code> The largest headline.
+        </li>
+        <li>
+          <code>&lt;h6&gt;...&lt;/h6&gt;</code> The smallest headline.
+        </li>
+        <li>
+          <code>&lt;em&gt;...&lt;/em&gt;</code> Emphasized text.
+        </li>
+        <li>
+          <code>&lt;strong&gt;...&lt;/strong&gt;</code> Text with strong importance.
+        </li>
+      </ul>
+      <h3>Organization Tags</h3>
+      <ul>
+        <li>
+          <code>&lt;p&gt;...&lt;/p&gt;</code> A paragraph.
+        </li>
+        <li>
+          <code>&lt;ol&gt;...&lt;/ol&gt;</code> An ordered list.
+        </li>
+        <li>
+          <code>&lt;ul&gt;...&lt;/ul&gt;</code> An unordered list.
+        </li>
+        <li>
+          <code>&lt;li&gt;...&lt;/li&gt;</code> A list item within an ordered or unordered list.
+        </li>
+        <li>
+          <code>&lt;div&gt;...&lt;/div&gt;</code> A division. Used as a generic block of HTML.
+        </li>
+      </ul>
+      <h3>Other Common Tags</h3>
+      <ul>
+        <li>
+          <code>&lt;img&gt;</code> An image.
+        </li>
+        <li>
+          <code>&lt;br&gt;</code> A line break.
+        </li>
+        <li>
+          <code>&lt;ht&gt;</code> A horizontal rule.
+        </li>
+        <li>
+          <code>&lt;span&gt;...&lt;/span&gt;</code> A generic inline container.
+        </li>
+        <li>
+          <code>&lt;table&gt;...&lt;/table&gt;</code> A table.
+        </li>
+        <li>
+          <code>&lt;tr&gt;...&lt;/tr&gt;</code> A table row.
+        </li>
+        <li>
+          <code>&lt;td&gt;...&lt;/tr&gt;</code> A table cell.
+        </li>
+      </ul>
+      <h3>Common Attributes</h3>
+      <ul>
+        <li>
+          <code>&lt;img src="http://wileecoyote.com/headshots.jpg"&gt;</code> An image.
+        </li>
+        <li>
+          <code>&lt;a href="http://wileecoyote.com&gt;...&lt;/a&gt;</code> A link to a URL.
+        </li>
+        <li>
+          <code>&lt;div class="container"&gt;...&lt;/div&gt;</code> A division with a CSS class applied.
+        </li>
+        <li>
+          <code>&lt;link href="http://wileecoyote.com/styles.css" rel="stylesheet" type="text/css"&gt;</code> Connecting an HTML document to a stylesheet.
+        </li>
+        <li>
+          <code>&lt;input type="text"&gt;</code> A text form field.
+        </li>
+        <li>
+          <code>&lt;button&gt;...&lt;/button&gt;</code> A button.
+        </li>
+      </ul>
+      <h3>Setting Up A Basic HTML Document</h3>
+      <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title>Hello World&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+            &lt;p&gt;This is a website.&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+      </code> 
+      <h2>CSS</h2>
+      <ul>
+        <li>Select a <code>&lt;p&gt;</code> element.
+        <code>
+  p { ... }
+        </code>
+        </li>
+        <li>
+          Select the <code>&lt;p&gt;</code> <em>elements</em> on a page and change the text color and font size of that content.
+            <code>
+  p {
+    color: #ff0;
+    font-size: 16px;
+  }
+          </code>
+        </li>
+        <li>
+          Select any elements with the <code>safe</code> <em>class</em> applied, and make the background green.
+            <code>
+  .safe {
+    background-color: green;
+  }
+            </code>
+        </li>
+        <li>
+          Select an element with the <code>dangerous</code> <em>ID</em>, and make the background red.
+            <code>
+  #dangerous {
+    background-color: red;
+  }
+          </code>
+        </li>
+        <li>
+          Select <code>div</code> elements with the <code>safe</code> <em>class</em> applied, and make the background green.
+            <code>
+  div .safe {
+    background-color: green;
+  }
+            </code>
+        </li>
+      </ul>
+      <h2>Linking Files</h2>
+      <ul>
+        <li>
+            Connecting an HTML document to a stylesheet <em>hosted on another server</em>.
+              <code>
+  &lt;link href="<strong>http://wileecoyote.com/styles.css</strong>" rel="stylesheet" type="text/css"&gt;
+              </code>
+        </li>
+        <li>
+            Connecting an HTML document to a stylesheet <em>hosted on the same server, in the same directory as the HTML file</em>.
+              <code>
+  &lt;link href="<strong>styles.css</strong>" rel="stylesheet" type="text/css"&gt;
+              </code>
+        </li>
+        <li>
+            Connecting an HTML document to a stylesheet <em>hosted on the same server, but in a directory below the HTML file</em>.
+              <code>
+  &lt;link href="<strong>css/</strong>styles.css" rel="stylesheet" type="text/css"&gt;
+              </code>
+        </li>
+        <li>
+          Displaying an image <em>hosted on the same server, but in a directory below the HTML file</em>.
+            <code>
+  &lt;img src="<strong>images/</strong>wileecoyote.jpg"&gt;
+            </code>
+        </li>
+    </ul>
+  </div>
+</body>
 </html>
