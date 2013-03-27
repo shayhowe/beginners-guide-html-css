@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>About - Wile E. Coyote</title>
+    
+    <meta name="description" content="The home of Wile E. Coyote while completing the beginners guide to HTML and CSS.">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|PT+Serif:400,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <!-- Primary header -->
+
+    <header class="primary-header group">
+      <div class="container">
+
+        <h1 class="primary-logo">
+          <a href="#">
+            Wile E. Coyote <span class="h-standfirst">Have Brain. Will Travel.</span>
+          </a>
+        </h1>
+
+        <nav class="primary-nav">
+          <ul class="list-compact">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+            <li><a href="journal.html">Journal</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <div class="container">
+
+      <h2 class="gutters">Wile E. Coyote</h2>
+
+      <!-- About -->
+
+      <section class="group">
+
+        <h2 class="col-1">About</h2>
+
+        <section class="divider col-3">
+
+          <img class="avatar avatar-pulled" src="img/wile.jpg" alt="Wile E. Coyote">
+
+          <p>Motivated by engineering, science and ornithology, Wile E. Coyote has made a successful career testing and prototyping in all fields of his study. His dedicated research on the wild Road Runner has been widely read in aviation circles. Recently he become the pre-eminent scholar on Acme studies including dynamite, inventing, and bird watching.</p>
+
+        </section>
+
+      </section>
+
+      <!-- Experience -->
+
+      <section>
+
+        <h2 class="gutters">Experience</h2>
+
+        <ul class="list-compact">
+          
+          <li class="group">
+            <aside class="col-1">
+              <h5>Freelance</h5>
+              <span class="text-offset">1949 &ndash; Present</span>
+            </aside>
+            <section class="col-3">
+              <h3>Genius</h3>
+              <p>The dynamic combination of a bachelor&#8217;s degree in Ornithology and a master&#8217;s degree in Electrical Drawings <abbr title="and">&amp;</abbr> Schematics can only be described as Genius, if not Super Genius. Current work includes trapping the elusive <i>Disapperalis Quickius</i>, or road runner.</p>
+            </section>
+          </li>
+          
+          <li class="group">
+            <aside class="col-1">
+              <h5>Acme Corporation</h5>
+              <span class="text-offset">1952 &ndash; 1966</span>
+            </aside>
+            <section class="divider col-3">
+              <h3>Product Tester <abbr title="and">&amp;</abbr> Usability Expert</h3>
+              <p>Every year Acme Corporation releases an abundance of new products, including explosive tennis balls, giant rubber bands, rocket powered roller skates, and more, all of which need to be extensively tested and reported on.</p>
+            </section>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- Education -->
+
+      <section>
+
+        <h2 class="gutters">Education</h2>
+
+        <ul class="list-compact">
+
+          <li class="group">
+            <aside class="col-1">
+              <h5>Looney State College</h5>
+              <span class="text-offset">1952 &ndash; 1954</span>
+            </aside>
+            <section class="col-3">
+              <h3>Electrical Drawings <abbr title="and">&amp;</abbr> Schematics</h3>
+              <p>The Electrical Drawings <abbr title="and">&amp;</abbr> Schematics graduate program at Looney State College offers a strict discipline encompassing a diverse set of studies, including drawling, engineering, operations, pyrotechnics, schematics, and wiring.</p>
+            </section>
+          </li>
+
+          <li class="group">
+            <aside class="col-1">
+              <h5>Warner University</h5>
+              <span class="text-offset">1946 &ndash; 1950</span>
+            </aside>
+            <section class="divider col-3">
+              <h3>Ornithology</h3>
+              <p>At the Warner Lab of Ornithology, students study to understand birds, reviewing their evolution, behavior, and ecology. Birds, and other related species, are brought into the laboratory for observation and examination.</p>
+            </section>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- Skills -->
+
+      <section class="group">
+
+        <h2 class="col-1">Skills</h2>
+
+
+        <ul class="col-3 list-cols">
+          <li>Amateur Paramedics</li>
+          <li>Booby Traps</li>
+          <li>Construction</li>
+          <li>Dedication</li>
+          <li>Extreme Sports</li>
+          <li>Gourmet Cooking</li>
+          <li>Hunting <abbr title="and">&amp;</abbr> Trapping</li>
+          <li>Painting</li>
+          <li>Setting Explosives</li>
+        </ul>
+
+      </section>
+
+      <!-- Primary footer -->
+
+      <footer class="primary-footer">
+        <small class="text-offset">&copy; Copyright Wile E. Coyote</small>
+      </footer>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
+    <!-- Grid -->
+    <div id="grid"></div>
+    <style type="text/css"> #grid {background: url("img/grid.png") 50% 0 repeat-y; display: none; height: 2000%; position: absolute; top: 0; width: 100%; z-index: 9999; } </style>
+    <script type="text/javascript"> $(document).bind('keydown', function(event) { if (event.which == 27) { event.preventDefault(); $('#grid').toggle(); } }); </script>
+
+  </body>
+</html>

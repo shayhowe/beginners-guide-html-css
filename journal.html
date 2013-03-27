@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Journal - Wile E. Coyote</title>
+    
+    <meta name="description" content="The home of Wile E. Coyote while completing the beginners guide to HTML and CSS.">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|PT+Serif:400,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <!-- Primary header -->
+
+    <header class="primary-header group">
+      <div class="container">
+
+        <h1 class="primary-logo">
+          <a href="#">
+            Wile E. Coyote <span class="h-standfirst">Have Brain. Will Travel.</span>
+          </a>
+        </h1>
+
+        <nav class="primary-nav">
+          <ul class="list-compact">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+            <li><a href="journal.html">Journal</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <div class="container">
+
+      <!-- Journal -->
+
+      <section>
+
+        <h2 class="gutters">Journal</h2>
+
+        <article class="group">
+
+          <aside class="col-1">
+
+            <img class="avatar avatar-block" src="img/wile.jpg" alt="Wile E. Coyote">
+            <h5>Wile E. Coyote</h5>
+            <time class="text-offset" datetime="1952-08-24" pubdate>August 24<sup>th</sup>, 1952</time>
+
+          </aside>
+
+          <section class="divider col-3">
+
+            <h3>Why Can&#8217;t I Catch this Bird?</h3>
+
+            <p>I&#8217;ve struggled for so long to capture this one illusive species. It&#8217;s completely rare to find a road runner in the Utah desert, but here one exists. I want to capture it. I want to understand its origin, and its purpose.</p>
+
+            <p>Maybe in discovering its ways, will I begin to understand my own.</p>
+
+            <figure class="group">
+              <iframe class="video-journal" src="http://www.youtube.com/embed/My1Kzy_cDV0?list=PLE6AB81152E87BC80"></iframe>
+              <figcaption class="text-offset">The indefinable <i>Disapperalis Quickius</i>, why can I not catch thee.</figcaption>
+            </figure>
+
+          </section>
+
+        </article>
+
+        <article class="group">
+
+          <aside class="col-1">
+
+            <img class="avatar avatar-block" src="img/wile.jpg" alt="Wile E. Coyote">
+            <h5>Wile E. Coyote</h5>
+            <time class="text-offset" datetime="1949-02-03" pubdate>February 3<sup>rd</sup>, 1949</time>
+
+          </aside>
+
+          <section class="divider col-3">
+
+            <h3>Construction, Acme, Apex</h3>
+
+            <p>Warner University preaches itself as the <i>&#8216;apex&#8217;</i> of education. Here I strive not just to satiate my understanding of birds, but to become one. I&#8217;ve found myself cross-dressing often in boa, plummage and more. What is it about their features that fascinates me so?</p>
+
+            <p>The more birds I capture, the more I study them, the more I find myself becoming one&#8230;</p>
+
+            <p>I&#8217;ve decided to pursue a bigger career in electrical drawings and schematics. All in my larger quest at understanding what it would take to become the ultimate of animals. </p>
+
+          </section>
+
+        </article>
+
+        <article class="group">
+
+          <aside class="col-1">
+
+            <img class="avatar avatar-block" src="img/wile.jpg" alt="Wile E. Coyote">
+            <h5>Wile E. Coyote</h5>
+            <time class="text-offset" datetime="1947-10-18" pubdate>October 18<sup>th</sup>, 1947</time>
+
+          </aside>
+
+          <section class="col-3">
+
+            <h3>Bird Flu</h3>
+
+            <p>Like Darwin I&#8217;ve became fascinated with birds. Their plumage. Their ability for flight. I was always curious how they related to their bigger, extinct brethren, the dinosaur.</p>
+
+            <p>It&#8217;s fascinating to watch them flock. One of the only species to migrate, as an organic entity. I&#8217;m infatuated with them. And have chosen to purse my studies, and my career in understanding the the avian world.</p>
+
+          </section>
+
+        </article>
+
+      </section>
+
+      <!-- Primary footer -->
+
+      <footer class="primary-footer">
+        <small class="text-offset">&copy; Copyright Wile E. Coyote</small>
+      </footer>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
+    <!-- Grid -->
+    <div id="grid"></div>
+    <style type="text/css"> #grid {background: url("img/grid.png") 50% 0 repeat-y; display: none; height: 2000%; position: absolute; top: 0; width: 100%; z-index: 9999; } </style>
+    <script type="text/javascript"> $(document).bind('keydown', function(event) { if (event.which == 27) { event.preventDefault(); $('#grid').toggle(); } }); </script>
+
+  </body>
+</html>
