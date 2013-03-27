@@ -51,6 +51,10 @@ table {
   Custom Styles
 */
 
+b, strong {
+  font-weight: bold;
+}
+
 body {
   font-size: 20px;
   line-height: 24px;
@@ -60,9 +64,34 @@ body {
   background: #F2F2F2;
 }
 
+i, em {
+  font-style: italic;
+}
+
+code, .code {
+  font-family: Courier, serif;
+  font-size: 20px;
+  color: #2366A0;
+}
+
+code {
+  display: block;
+  margin: 10px 0 20px 0;
+}
+
 h1 {
   font-size: 48px;
   margin: 30px 0;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 40px 0 20px 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 40px 0 20px 0;
 }
 
 ul {
@@ -70,10 +99,14 @@ ul {
 }
 
 li {
-  margin: 0 0 15px 0;
+  margin: 30px 0;
 }
 
 .container {
   max-width: 940px;
   margin: 0 auto;
+}
+
+.preformat {
+  white-space: pre;
 }
