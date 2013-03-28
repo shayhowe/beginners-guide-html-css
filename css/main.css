@@ -229,6 +229,15 @@ ul {
   margin-bottom: 47px;
   padding-bottom: 23px;
 }
+.lessons {
+  margin: 20px 0 0 0;
+}
+.lessons h2 {
+  margin: 20px 0 ;
+}
+.lessons ul {
+  padding: 0 0 0 50px;
+}
 
 /*
   Primary header
