@@ -48,7 +48,7 @@ table {
 }
 
 /*
-  Custom Styles
+  Normalize
 */
 
 b, strong {
@@ -57,3 +57,65 @@ b, strong {
 i, em {
   font-style: italic;
 }
+
+/*
+  Custom Styles
+*/
+
+.container {
+  background-color: sandybrown;
+  margin: 0 auto;
+  padding: 10px;
+  width: 960px;
+}
+
+header, footer, .box {
+  border: 5px solid brown;  
+  padding: 10px;
+  margin: 10px;
+}
+
+header, footer {
+  height: 150px;
+  width: 910px;
+}
+
+header {
+  background-color: tan;
+}
+
+footer {
+  background-color: white;
+}
+
+.box {
+  float: left;
+  height: 200px;
+}
+
+.two-up {
+  background-color: orange;
+  width: 430px;
+}
+
+.three-up {
+  background-color: red;
+  width: 270px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
