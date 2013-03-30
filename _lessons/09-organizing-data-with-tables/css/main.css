@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -56,4 +56,45 @@ b, strong {
 }
 i, em {
   font-style: italic;
+}
+
+body {
+  font: 12px sans-serif;
+}
+
+table {
+  margin: 40px auto;
+  border: 1px solid #dbdbdb;
+}
+
+th, td {
+  padding: 18px;
+  text-align: center;
+}
+
+th {
+  color: #333;
+  background: -webkit-linear-gradient(#ececec, #e7e7e7);
+  background:    -moz-linear-gradient(#ececec, #e7e7e7);
+  background:     -ms-linear-gradient(#ececec, #e7e7e7);
+  background:      -o-linear-gradient(#ececec, #e7e7e7);
+  background:         linear-gradient(#ececec, #e7e7e7);
+}
+
+td {
+  color: #7b7b7b;
+}
+
+tr:nth-child(odd) {
+  background: #f8f8f8;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+tr:first-child {
+  border-top: 1px solid #dbdbdb;
+}
+
+tr:last-child {
+  border-bottom: 1px solid #dbdbdb;
 }
