@@ -55,6 +55,55 @@ sup {
 }
 
 /*
+  Grid
+*/
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.col-1,
+.col-2,
+.col-3 {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.col-1 {
+  width: 220px;
+}
+.col-2 {
+  width: 460px;
+}
+.col-3 {
+  width: 700px;
+}
+.gutters {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.baseline-bottom {
+  margin-bottom: 24px;
+}
+
+/*
+  Clearfix
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
   Typography
 */
 
@@ -104,6 +153,10 @@ h6,
   color: #827762;
   font-size: 14px;
 }
+.text-intro {
+  font-size: 24px;
+  line-height: 36px;
+}
 abbr[title="and"] {
   font-family: Baskerville,Palatino,"Book Antiqua",serif;
   font-style: italic;
@@ -111,17 +164,29 @@ abbr[title="and"] {
   font-size: .8em;
   line-height: 1;
 }
+code {
+  color: #8f816a;
+  font-family: "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+}
 
 /*
   Links
 */
 
 a {
+  color: #e4a467;
   text-decoration: none;
   -webkit-transition: all .15s linear;
      -moz-transition: all .15s linear;
        -o-transition: all .15s linear;
           transition: all .15s linear;
+}
+a:hover {
+  color: #c9905b;
+}
+.link-feat {
+  font: 700 15px/26px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 /*
@@ -172,52 +237,6 @@ ul {
   height: 336px;
   margin: 0 20px 24px 0;
   width: 460px;
-}
-
-/*
-  Grid
-*/
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.col-1,
-.col-2,
-.col-3 {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.col-1 {
-  width: 220px;
-}
-.col-2 {
-  width: 460px;
-}
-.col-3 {
-  width: 700px;
-}
-.gutters {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/*
-  Clearfix
-*/
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
 }
 
 /*
@@ -285,8 +304,12 @@ ul {
   color: #965d51;
   font: 700 18px/24px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.primary-nav a:hover {
+.primary-nav a:hover,
+.nav-active a {
   color: #fff;
+}
+.nav-active a {
+  cursor: default;
 }
 
 /*
