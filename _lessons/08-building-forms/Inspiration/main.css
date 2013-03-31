@@ -1,0 +1,252 @@
+/*RESET BEGIN*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET END*/
+
+/*CLEARFIX BEGIN*/
+.clearfix:after {
+	content: " ";
+	display: block;  
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/*CLEARFIX END*/
+
+body {
+	background-color: e3e6eb;
+	color: rgba(0, 0, 0, .9);
+}
+
+header, section {
+	width: 425px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	text-transform: lowercase;
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: .025em;
+}
+
+header, .create {
+	text-align: center;
+	font-family: 'Helvetica neue', Arial, Helvetica, sans-serif;
+}
+
+
+section {
+	position: relative;
+	margin-bottom: 20px;
+	background-color: #f5f7fb;
+	border: 1px solid rgba(0, 0, 0, .25);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+
+form {
+	width: 385px;
+	margin: 0 auto;
+}
+
+fieldset {
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 8px;
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, .2);
+	background-color: #e5e9f2;
+}
+
+input {
+	height: 32px;
+	line-height: 32px;
+	font-size: 18px;
+	font-family: 'Helvetica neue', Arial, Helvetica, sans-serif;
+}
+
+input.field {
+	width: 80%;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 10px 10px 10px 20px;
+}
+
+fieldset .signin {
+	border-top: 1px solid rgba(255, 255, 255, .4);
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+fieldset .signin:first-child {
+	border-top: none;
+}
+
+fieldset .signin:last-child {
+	border-bottom: none;
+}
+
+
+input.button {
+	height: 52px;
+	width: 100%;
+	margin-top: 20px;
+	background-color: #4c6ea2;
+	border: 1px solid rgba(0, 0, 0, .7);
+	border-radius: 8px;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+
+
+
+/*input.signin {
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+*/
+
+
+/*.email {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-top: 1px solid rgba(0, 0, 0, .3);
+	border-bottom: none;
+	padding-left: 20px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.password {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top: none;
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	padding-left: 20px;
+	box-shadow: inset 0 -1px 2px rgba(0, 0, 0, .4);
+}*/
+
+
+.create {
+	padding-bottom: 50px;
+}
+
+.iconOut {
+	height: 90px;
+	width: 90px;
+	background-color: #9ba4b1;
+	position: absolute;
+	top: -29px;
+	left: 167px;
+	border: 1px solid black;
+	border-radius: 90px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .4),
+				inset 0 1px 1px rgba(255, 255, 255, .4);
+}
+
+.iconIn {
+	height: 78px;
+	width: 78px;
+	background-color: #484951;
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	border-radius: 78px;
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, .8);
+}
+
+.logo {
+	height: 36px;
+	width: 36px;
+	background-color: #707987;
+	position: absolute;
+	top: 21px;
+	left: 21px;
+	border-radius: 36px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .9);
+}
+
+.top {
+	height: 32px;
+	background-color: #9ba4b1;
+	margin-bottom: 50px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-top: 1px solid rgba(0, 0, 0, .3);
+	border-right: 1px solid rgba(0, 0, 0, .3);
+	border-left: 1px solid rgba(0, 0, 0, .3);
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, .4);
+}
+
+.bottom {
+	height: 52px;
+	background-color: #ebeff7;
+	margin-top: 20px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top: 1px solid rgba(0, 0, 0, .15);
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, .4);
+}
+
+
+
+
