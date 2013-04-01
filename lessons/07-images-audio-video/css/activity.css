@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  Reset Customizations
+*/
+body {
+  font-family: Georgia, serif;
+}
+header{
+  font-family: Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #2d597f;
+}
+a:hover {
+  color: #5096d4;
+}
+b, strong {
+  font-weight: bold;
+}
+i, em {
+  font-style: italic;
+}
+h1 {
+  float: left;
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+  margin: 0 0 5px 0;
+}
+footer {
+  text-align: center;
+  padding: 50px;
+}
+p {
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+section {
+  margin: 30px 0;
+}
+li {
+  display: block;
+}
+
+/*
+  Custom Styles
+*/
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.text-offset {
+  color: #94a0ac;
+}
+.avatar {
+  border-radius: 50%;
+  float: left;
+  width: 100px;
+}
+.tweet {
+  float: right;
+  width: 525px;
+  padding-top: 15px;
+}
+.icons {
+  font-size: 12px;
+}
+
+/*
+  Grouping and Clearfix
+*/
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  *zoom: 1;
+  padding: 25px 0;
+  border-bottom: 1px solid #c8d2d8;
+}
+
+/*
+  Dropdown Menu
+*/
+nav {
+  float: right;
+  width: 350px;
+  font-size: 18px;
+}
+nav ul {
+  position: relative;
+  list-style: none;
+}
+nav ul li {
+  display: block;
+  float: left;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background: #5f6975;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 15px;
+}
+nav ul ul a {
+  color: #fff;
+}
+nav ul ul a:hover {
+  color: #c8d2d8;
+}
+nav ul li a {
+  display: block;
+  padding: 8px 15px;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+
+/*
+  Sprites
+*/
+.icon-article, .icon-email {
+  background: url(../img/sprites.png) no-repeat;
+  color: transparent;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+.icon-article {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-email {
+  background-position: -17px 0;
+  width: 16px;
+  height: 16px;
+}
