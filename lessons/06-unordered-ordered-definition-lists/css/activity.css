@@ -23,7 +23,6 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -48,13 +47,20 @@ table {
 }
 
 /*
-  Custom Styles
+  Reset Customizations
 */
 body {
   font-family: Georgia, serif;
 }
+header{
+  font-family: Helvetica, sans-serif;
+}
 a {
   text-decoration: none;
+  color: #2d597f;
+}
+a:hover {
+  color: #5096d4;
 }
 b, strong {
   font-weight: bold;
@@ -85,6 +91,10 @@ section {
 li {
   display: block;
 }
+
+/*
+  Custom Styles
+*/
 .container {
   max-width: 650px;
   margin: 0 auto;
@@ -101,6 +111,9 @@ li {
   float: right;
   width: 525px;
   padding-top: 15px;
+}
+.icons {
+  font-size: 12px;
 }
 
 /*
@@ -140,15 +153,13 @@ nav ul ul {
   top: 100%;
   background: #5f6975;
   border-radius: 5px;
+  font-size: 14px;
 }
 nav ul ul a {
   color: #fff;
 }
 nav ul ul a:hover {
-  color: black;
-}
-nav ul ul li {
-  position: relative;
+  color: #c8d2d8;
 }
 nav ul li a {
   display: block;
@@ -156,7 +167,4 @@ nav ul li a {
 }
 nav ul li:hover > ul {
   display: block;
-}
-.nav-icon {
-  font-size: 12px;
 }
