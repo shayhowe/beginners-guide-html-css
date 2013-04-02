@@ -59,8 +59,8 @@ sup {
 */
 
 .container {
-  max-width: 960px;
-  margin: 20px auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /*
@@ -97,10 +97,12 @@ p {
 }
 abbr[title="and"] {
   font-family: Baskerville,Palatino,"Book Antiqua",serif;
+  font-size: .9em;
   font-style: italic;
   font-weight: normal;
+  line-height: 1;
 }
-.text-importance {
+.text-important {
   font-weight: 700;
 }
 
@@ -124,23 +126,29 @@ a:hover {
 
 
 
-.primary-heading {
+
+
+
+
+h1, h2, h3, h4, h5 {
   color: #404853;
-  font-size: 26px;
-  line-height: 40px;
-  text-align: center;
 }
-
-
-
-
 h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 20px;
 }
+h3, h4, h5 {
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 26px;
+  line-height: 40px;
+}
 h2 {
-  color: #404853;
-  font-size: 18px;
+  font-size: 21px;
+}
+h3, h4 {
+  font-size: 16px;
 }
 h6 {
   color: #8c9198;
@@ -148,14 +156,65 @@ h6 {
   text-transform: uppercase;
 }
 
+.heading-primary {
+  margin: 40px 0;
+  text-align: center;
+}
+.heading-lesson {
+  display: inline-block;
+  margin: 1px 0 20px 0;
+}
+.heading-lesson h2 {
+  margin-top: -1px;
+  -webkit-transition: all .15s linear;
+     -moz-transition: all .15s linear;
+       -o-transition: all .15s linear;
+          transition: all .15s linear;
+}
+.heading-lesson:hover h2 {
+  color: #f7941d;
+}
+.heading-extend {
+  margin-bottom: 1px;
+}
+
+
+.lesson {
+  margin-bottom: -1px;
+}
+
+
+
+
+ol, ul {
+  margin: 0 0 20px 20px;
+}
+ul {
+  list-style: square;
+}
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+  margin: 0 0 0 20px;
+}
 
 
 
 
 
 
-
-
-
-
+.note {
+  background: #fff;
+  border-bottom: 1px solid #e8eae9;
+  border-top: 2px solid #8c9198;
+  float: right;
+  margin: 0 0 19px 20px;
+  padding: 18px 20px 0 20px;
+  width: 180px;
+}
+.list-links {
+  color: #d0d2d5;
+  margin: 0 0 19px 20px;
+}
 
