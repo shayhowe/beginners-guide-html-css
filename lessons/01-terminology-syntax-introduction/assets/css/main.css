@@ -47,5 +47,71 @@ table {
   border-spacing: 0;
 }
 
-/* Your Custom Styles Below */
+/*
+  Custom Styles
+*/
 
+body {
+  background: #fafbfc;
+  color: #555;
+  font: 14px/20px "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-shadow: 0 1px 0 #fff
+}
+.container {
+  margin: 40px auto;
+  width: 800px;
+}
+
+/*
+  Typography
+*/
+
+strong {
+  font-weight: bold;
+}
+h1, h2, h3 {
+  color: #404853;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 21px;
+}
+h3 {
+  font-size: 18px;
+}
+p, pre {
+  margin-bottom: 20px;
+}
+code {
+  color: #8c9198;
+  font: 13px/19px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+}
+
+/*
+  Pre
+*/
+
+pre {
+  background: #e8eae9;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+       -o-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 1px 0 #fff;
+     -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 1px 0 #fff;
+          box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 1px 0 #fff;
+  padding: 10px 20px;
+}
+
+/*
+  Lists
+*/
+
+dd {
+  margin-bottom: 20px;
+}

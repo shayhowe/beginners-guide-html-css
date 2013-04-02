@@ -7,49 +7,51 @@
 
     <title>Introduction to File Paths</title>
     
-    <meta name="description" content="Introduction to File Paths.">
+    <meta name="description" content="Introduction to File Paths">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/paths.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
   </head>
   <body>
+
     <div class="container">
+      
       <h1>Introduction to File Paths</h1>
-      <ul>
-        <li>
-            <h3>
-              Connecting an HTML document to a stylesheet <em>hosted on another server</em>. This example connects the HTML document to a stylesheet hosted by Google for a font.
-            </h3>
-            <code>
-              &lt;link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet"&gt;
-            </code>
-        </li>
-        <li>
-          <h3>
-            Connecting an HTML document to a stylesheet <em>hosted on the same server, in the same directory as the HTML file</em>.
-          </h3>
-          <code>
-            &lt;link href="<strong>styles.css</strong>" rel="stylesheet"&gt;
-          </code>
-        </li>
-        <li>
-          <h3>
-            Connecting an HTML document to a stylesheet <em>hosted on the same server, but in a directory below the HTML file</em>. This is very common.
-          </h3>
-          <code>
-            &lt;link href="<strong>css/</strong>styles.css" rel="stylesheet"&gt;
-          </code>
-        </li>
-        <li>
-          <h3>
-            Displaying an image <em>hosted on the same server, but in a directory below the HTML file</em>.
-          </h3>
-          <code>
-            &lt;img src="<strong>images</strong>/road-runner-wile-e-coyote.png"&gt;
-          </code>
-          <img src="images/road-runner-wile-e-coyote.png" width="400">
-        </li>
-      </ul>
+
+      <!-- Internal reference -->
+      
+      <h3>Internal Reference Path</h3>
+
+      <p>Connecting an HTML document to a stylesheet <em>hosted on the same server, in the same directory as the HTML file</em>.</p>
+
+      <pre><code>&lt;link rel="stylesheet" href="<strong>styles.css</strong>"&gt;</code></pre>
+
+      <!-- Internal reference within a different directory -->
+
+      <h3>Internal Reference Path within a Different Directory</h3>
+
+      <p>Connecting an HTML document to a stylesheet <em>hosted on the same server, but in a directory below the HTML file</em>. This is very common.</p>
+
+      <pre><code>&lt;link rel="stylesheet" href="<strong>css/</strong>styles.css"&gt;</code></pre>
+
+      <!-- External reference -->
+
+      <h3>External Reference Path</h3>
+      
+      <p>Connecting an HTML document to a stylesheet <em>hosted on another server</em>. This example connects the HTML document to a stylesheet hosted by Google for a font.</p>
+
+      <pre><code>&lt;link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif"&gt;</code></pre>
+
+      <!-- Image reference -->
+
+      <h3>Internal Image Reference Path</h3>
+      <p>Displaying an image <em>hosted on the same server, but in a directory below the HTML file</em>.</p>
+
+      <pre><code>&lt;img src="<strong>assets/img/</strong>road-runner-wile-e-coyote.png"&gt;</code></pre>
+
+      <img src="assets/img/road-runner-wile-e-coyote.png">
+
     </div>
+
   </body>
 </html>

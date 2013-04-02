@@ -89,11 +89,33 @@ sup {
 body {
   background: #fafbfc url("../img/texture.jpg") 0 0 repeat;
   color: #555;
-  font: 13px/20px "Droid Sans", Arial, "Helvetica Neue", "Lucida Grande", sans-serif;
+  font: 14px/20px "Droid Sans", Arial, "Helvetica Neue", "Lucida Grande", sans-serif;
   text-shadow: 0 1px 0 #fff
 }
 p {
   margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #404853;
+  font-weight: 700;
+}
+h3, h4, h5 {
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 26px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 21px;
+}
+h3, h4 {
+  font-size: 16px;
+}
+h6 {
+  color: #8c9198;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 abbr[title="and"] {
   font-family: Baskerville,Palatino,"Book Antiqua",serif;
@@ -102,9 +124,7 @@ abbr[title="and"] {
   font-weight: normal;
   line-height: 1;
 }
-.text-important {
-  font-weight: 700;
-}
+
 
 /*
   Links
@@ -130,33 +150,9 @@ a:hover {
 
 
 
-h1, h2, h3, h4, h5 {
-  color: #404853;
-}
-h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 20px;
-}
-h3, h4, h5 {
-  margin-bottom: 20px;
-}
-h1 {
-  font-size: 26px;
-  line-height: 40px;
-}
-h2 {
-  font-size: 21px;
-}
-h3, h4 {
-  font-size: 16px;
-}
-h6 {
-  color: #8c9198;
-  font-size: 12px;
-  text-transform: uppercase;
-}
 
 .heading-primary {
+  font-weight: bold;
   margin: 40px 0;
   text-align: center;
 }
@@ -209,12 +205,11 @@ ul ol {
   border-bottom: 1px solid #e8eae9;
   border-top: 2px solid #8c9198;
   float: right;
-  margin: 0 0 19px 20px;
+  margin: -1px 0 19px 20px;
   padding: 18px 20px 0 20px;
   width: 180px;
 }
 .list-links {
   color: #d0d2d5;
-  margin: 0 0 19px 20px;
 }
 
