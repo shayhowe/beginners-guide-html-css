@@ -137,7 +137,7 @@ li {
 */
 nav {
   float: right;
-  width: 275px;
+  width: 350px;
   font-size: 18px;
 }
 nav ul {
@@ -145,15 +145,17 @@ nav ul {
   list-style: none;
 }
 nav ul li {
-  display: inline-block;
+  display: block;
+  float: left;
 }
 nav ul ul {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 30px;
   background: #5f6975;
   border-radius: 5px;
   font-size: 14px;
+  margin-left: 15px;
 }
 nav ul ul a {
   color: #fff;
@@ -167,4 +169,27 @@ nav ul li a {
 }
 nav ul li:hover > ul {
   display: block;
+}
+
+/*
+  Sprites
+*/
+.icon-article, .icon-email {
+  background: url(../img/sprites.png) no-repeat;
+  color: transparent;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+.icon-article {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-email {
+  background-position: -17px 0;
+  width: 16px;
+  height: 16px;
 }
