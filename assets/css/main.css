@@ -83,8 +83,8 @@ sup {
   Typography
 */
 
-/*$serif: 'Droid Serif', Constantia, Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif*/
-/*$unicode: 'Source Code Pro', Inconsolata, 'Lucida Console', Terminal, 'Courier New', Courier*/
+/* $serif: 'Droid Serif', Constantia, Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif */
+/* $unicode: 'Source Code Pro', Inconsolata, 'Lucida Console', Terminal, 'Courier New', Courier */
 
 body {
   background: #fafbfc url("../img/texture.jpg") 0 0 repeat;
@@ -125,7 +125,6 @@ abbr[title="and"] {
   line-height: 1;
 }
 
-
 /*
   Links
 */
@@ -141,21 +140,58 @@ a {
 a:hover {
   color: #f7941d;
 }
+.link-source {
+  color: #d0d2d5;
+  float: right;
+  font-size: 12px;
+}
+.link-source a {
+  color: #8c9198;
+}
+.link-source a:hover {
+  color: #f7941d;
+}
 
+/*
+  Lists
+*/
 
+ol, ul {
+  margin: 0 0 20px 20px;
+}
+ul {
+  list-style: square;
+}
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+  margin: 0 0 0 20px;
+}
+.list-links {
+  color: #d0d2d5;
+}
 
-
-
-
-
-
-
+/*
+  Primary heading
+*/
 
 .heading-primary {
   font-weight: bold;
   margin: 40px 0;
   text-align: center;
 }
+
+/*
+  Lesson
+*/
+
+.lesson {
+  margin-bottom: -1px;
+}
+
+/* Heading */
+
 .heading-lesson {
   display: inline-block;
   margin: 1px 0 20px 0;
@@ -174,42 +210,18 @@ a:hover {
   margin-bottom: 1px;
 }
 
+/* Layout */
 
-.lesson {
-  margin-bottom: -1px;
+.lesson-main {
+  float: left;
+  width: 560px;
 }
-
-
-
-
-ol, ul {
-  margin: 0 0 20px 20px;
-}
-ul {
-  list-style: square;
-}
-ol ol,
-ol ul,
-ul ul,
-ul ol {
-  margin: 0 0 0 20px;
-}
-
-
-
-
-
-
 .note {
   background: #fff;
   border-bottom: 1px solid #e8eae9;
   border-top: 2px solid #8c9198;
   float: right;
-  margin: -1px 0 19px 20px;
+  margin: -1px 0 19px 0;
   padding: 18px 20px 0 20px;
   width: 180px;
 }
-.list-links {
-  color: #d0d2d5;
-}
-
