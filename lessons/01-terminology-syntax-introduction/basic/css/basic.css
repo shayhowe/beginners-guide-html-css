@@ -55,7 +55,7 @@ body {
   background: #fafbfc;
   color: #555;
   font: 14px/20px "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  text-shadow: 0 1px 0 #fff
+  text-shadow: 0 1px 0 #fff;
 }
 .container {
   margin: 40px auto;
