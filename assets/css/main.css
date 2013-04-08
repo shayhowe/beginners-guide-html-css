@@ -195,6 +195,7 @@ ul ol {
 }
 
 /* Ordered lists */
+
 .list-ordered {
   list-style: none;
   margin-left: 35px;
@@ -251,15 +252,11 @@ ul ol {
 
 /* Heading */
 
+.lesson-link {
+  float: right;
+}
 .lesson-title {
   margin-bottom: 19px;
-  -webkit-transition: all .15s linear;
-     -moz-transition: all .15s linear;
-       -o-transition: all .15s linear;
-          transition: all .15s linear;
-}
-.lesson-title:hover {
-  color: #f7941d;
 }
 .lesson-title-extended {
   margin-bottom: 20px;
@@ -269,7 +266,7 @@ ul ol {
 
 .lesson-main {
   float: left;
-  width: 460px;
+  width: 450px;
 }
 .note {
   background: #fff;
