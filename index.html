@@ -23,17 +23,17 @@
 
       <!-- Header -->
 
-      <header>
-        <h1 class="heading-primary">A Beginner&#8217;s Guide to <abbr title="HyperText Markup Language">HTML</abbr> <abbr title="and">&amp;</abbr> <abbr title="Cascading Style Sheets">CSS</abbr> Coursework</h1>
+      <header class="primary-header">
+        <h1>A Beginner&#8217;s Guide to <abbr title="HyperText Markup Language">HTML</abbr> <abbr title="and">&amp;</abbr> <abbr title="Cascading Style Sheets">CSS</abbr> Coursework</h1>
       </header>
 
       <!-- Lesson 1 -->
 
-      <section class="lesson">
+      <section class="lesson group">
 
-        <a class="heading-lesson" href="http://learn.shayhowe.com/html-css/terminology-syntax-intro">
+        <a href="http://learn.shayhowe.com/html-css/terminology-syntax-intro">
           <h6>Lesson 1</h6>
-          <h2>Terminology, Syntax, <abbr title="and">&amp;</abbr> Introduction</h2>
+          <h2 class="lesson-title">Terminology, Syntax, <abbr title="and">&amp;</abbr> Introduction</h2>
         </a>
 
         <section class="lesson-main">
@@ -45,7 +45,7 @@
               <a href="lessons/01-terminology-syntax-introduction/reset/reset.html">HTML Document <abbr title="and">&amp;</abbr> CSS Reset</a>
               <span class="link-source">
                 <a href="https://github.com/shayhowe/beginners-guide-html-css/tree/master/lessons/01-terminology-syntax-introduction/reset">View Source</a>
-                &#10744;
+                /
                 <a href="lessons/01-terminology-syntax-introduction/reset/reset.zip">Download Source</a>
               </span>
             </li>
@@ -53,7 +53,7 @@
               <a href="lessons/01-terminology-syntax-introduction/basic/basic.html">Basic HTML Document <abbr title="and">&amp;</abbr> CSS Stylesheet</a>
               <span class="link-source">
                 <a href="https://github.com/shayhowe/beginners-guide-html-css/tree/master/lessons/01-terminology-syntax-introduction/basic">View Source</a>
-                &#10744;
+                /
                 <a href="lessons/01-terminology-syntax-introduction/basic/basic.zip">Download Source</a>
               </span>
             </li>
@@ -61,14 +61,35 @@
 
           <h3>Homework</h3>
 
-          <ol>
-            <li>Read this weeks, as well as next weeks, lesson on <a href="http://learn.shayhowe.com/html-css/">A Beginner&#8217;s Guide to HTML <abbr title="and">&amp;</abbr> CSS</a></li>
-            <li>Create a new HTML document and markup your resume using different elements</li>
-            <li>Create a new CSS stylesheet, including a <a href="http://meyerweb.com/eric/tools/css/reset/">reset</a></li>
-            <li>Create a reference from your HTML document to your CSS stylesheet, connecting the two</li>
-            <li>Validate both your <a href="http://validator.w3.org/">HTML document</a> and <a href="http://jigsaw.w3.org/css-validator/">CSS stylesheet</a> using the W3C validation services</li>
-            <li>Watch the first week of videos on <a href="http://learncss.tutsplus.com/">30 Days to Learn HTML <abbr title="and">&amp;</abbr> CSS</a></li>
-            <li>Create an account on <a href="https://github.com/">GitHub</a> and try to <a href="http://git-scm.com/downloads">install Git</a> on your computer</li>
+          <ol class="list-ordered">
+            <li>
+              <strong class="list-ordered-number">1</strong>
+              Read the first two lessons on <a href="http://learn.shayhowe.com/html-css/">A Beginner&#8217;s Guide to HTML <abbr title="and">&amp;</abbr> CSS</a>
+            </li>
+            <li>
+              <strong class="list-ordered-number">2</strong>
+              Create a new HTML document and markup a resume using basic elements, such as <code>h1</code> and <code>p</code> element
+            </li>
+            <li>
+              <strong class="list-ordered-number">3</strong>
+              Create a new CSS stylesheet, including a <a href="http://meyerweb.com/eric/tools/css/reset/">reset</a>
+            </li>
+            <li>
+              <strong class="list-ordered-number">4</strong>
+              Add a reference from your HTML document to your CSS stylesheet, connecting the two
+            </li>
+            <li>
+              <strong class="list-ordered-number">5</strong>
+              Validate both your <a href="http://validator.w3.org/">HTML document</a> and <a href="http://jigsaw.w3.org/css-validator/">CSS stylesheet</a> using the W3C validation services
+            </li>
+            <li>
+              <strong class="list-ordered-number">6</strong>
+              Watch the first week of videos on <a href="http://learncss.tutsplus.com/">30 Days to Learn HTML <abbr title="and">&amp;</abbr> CSS</a>
+            </li>
+            <li>
+              <strong class="list-ordered-number">7</strong>
+              Create an account on <a href="https://github.com/">GitHub</a> and attempt to <a href="http://git-scm.com/downloads">install Git</a> on your computer
+            </li>
           </ol>
 
         </section>
@@ -83,6 +104,261 @@
             <li><a href="http://overapi.com/css/">CSS Cheat Sheet</a></li>
           </ul>
         </aside>
+
+      </section>
+
+      <!-- Lesson 2 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/elements-semantics">
+          <h6>Lesson 2</h6>
+          <h2 class="lesson-title">Elements <abbr title="and">&amp;</abbr> Semantics</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <h3>Homework</h3>
+
+          <ol class="list-ordered">
+            <li>
+              <strong class="list-ordered-number">1</strong>
+              Revisit the last lessons resume, refactoring it into more semantic markup using the new elements introduced within this lesson
+            </li>
+            <li>
+              <strong class="list-ordered-number">2</strong>
+              Adding to the Resume, shaping it more into an <strong>About</strong> page, write a brief overview of yourself and rename the file to <code>about.html</code>
+            </li>
+            <li>
+              <strong class="list-ordered-number">3</strong>
+              Create a <strong>Journal</strong> page named <code>journal.html</code> and add a journal entry detailing what you&#8217;ve learned thus far
+            </li>
+            <li>
+              <strong class="list-ordered-number">4</strong>
+              Create a <strong>Home</strong> page named <code>index.html</code> and tease both your <strong>About</strong> and <strong>Journal</strong> pages
+            </li>
+            <li>
+              <strong class="list-ordered-number">5</strong>
+              Create a global navigation on every page, linking them all together
+            </li>
+            <li>
+              <strong class="list-ordered-number">6</strong>
+              Push your homework to GitHub for review
+            </li>
+            <li>
+              <strong class="list-ordered-number">7</strong>
+              Read next weeks lesson on <a href="http://learn.shayhowe.com/html-css/">A Beginner&#8217;s Guide to HTML <abbr title="and">&amp;</abbr> CSS</a>
+            </li>
+            <li>
+              <strong class="list-ordered-number">8</strong>
+              Watch the second week of videos on <a href="http://learncss.tutsplus.com/">30 Days to Learn HTML <abbr title="and">&amp;</abbr> CSS</a>
+            </li>
+          </ol>
+
+        </section>
+
+        <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="http://gitimmersion.com/">Git Immersion</a></li>
+            <li><a href="http://try.github.com/">Try Git</a></li>
+            <li><a href="http://rogerdudler.github.com/git-guide/">Git Guide</a></li>
+            <li><a href="http://blog.teamtreehouse.com/git-for-designers-part-1">Git for Designers</a></li>
+            <li><a href="http://git-scm.com/book">Git Community Book</a></li>
+          </ul>
+        </aside>
+
+      </section>
+
+      <!-- Lesson 3 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/box-model">
+          <h6>Lesson 3</h6>
+          <h2 class="lesson-title">Box Model <abbr title="and">&amp;</abbr> Positioning</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
+
+      </section>
+
+      <!-- Lesson 4 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/typography">
+          <h6>Lesson 4</h6>
+          <h2 class="lesson-title lesson-title-extended">Typography</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
+
+      </section>
+
+      <!-- Lesson 5 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/backgrounds-gradients">
+          <h6>Lesson 5</h6>
+          <h2 class="lesson-title">Backgrounds <abbr title="and">&amp;</abbr> Gradients</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
+
+      </section>
+
+      <!-- Lesson 6 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/ordered-unordered-definition-lists">
+          <h6>Lesson 6</h6>
+          <h2 class="lesson-title">Unordered, Ordered, <abbr title="and">&amp;</abbr> Definition Lists</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
+
+      </section>
+
+      <!-- Lesson 7 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/images-audio-video">
+          <h6>Lesson 7</h6>
+          <h2 class="lesson-title">Images, Audio, <abbr title="and">&amp;</abbr> Video</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
+
+      </section>
+
+      <!-- Lesson 8 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/building-forms">
+          <h6>Lesson 8</h6>
+          <h2 class="lesson-title lesson-title-extended">Building Forms</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
+
+      </section>
+
+      <!-- Lesson 9 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/organizing-data-tables">
+          <h6>Lesson 9</h6>
+          <h2 class="lesson-title lesson-title-extended">Organizing Data with Tables</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
+
+      </section>
+
+      <!-- Lesson 10 -->
+
+      <section class="lesson group">
+
+        <a href="http://learn.shayhowe.com/html-css/coding-practices">
+          <h6>Lesson 10</h6>
+          <h2 class="lesson-title">Coding Practices <abbr title="and">&amp;</abbr> Additional Resources</h2>
+        </a>
+
+        <section class="lesson-main">
+
+          <p><em class="text-offset">Coming soon.</em></p>
+
+        </section>
+
+        <!-- <aside class="note">
+          <h4>Additional Resources</h4>
+          <ul class="list-links">
+            <li><a href="#">Coming</a></li>
+          </ul>
+        </aside> -->
 
       </section>
 
