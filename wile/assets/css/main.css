@@ -104,7 +104,7 @@ sup {
 }
 
 /*
-  Typography
+  Custom styles
 */
 
 body {
@@ -112,9 +112,11 @@ body {
   color: #5d5445;
   font: 16px/24px "PT Serif", Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
-p {
-  margin-bottom: 24px;
-}
+
+/*
+  Typography
+*/
+
 h1, h2, h3, h4, h5, h6 {
   color: #965d51;
   font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -148,6 +150,9 @@ h5,
 h6,
 .h-promo {
   font-size: 16px;
+}
+p {
+  margin-bottom: 24px;
 }
 .text-offset {
   color: #827762;

@@ -48,50 +48,63 @@ table {
 }
 
 /*
+  Resetting defaults
+*/
+
+b, strong {
+  font-weight: bold;
+}
+i, em {
+  font-style: italic;
+}
+
+/*
   Custom Styles
 */
 
 body {
-  background: #fafbfc;
-  color: #555;
-  font: 14px/20px "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  text-shadow: 0 1px 0 #fff;
+  background: #fff9ad;
+  color: #5d5445;
+  font: 16px/24px Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
 .container {
-  margin: 40px auto;
-  width: 800px;
+  max-width: 960px;
+  margin: 48px auto;
 }
 
 /*
   Typography
 */
 
-h1, h2, h3 {
-  color: #404853;
+h1, h2, h3, h4, h5, h6 {
+  color: #965d51;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 24px;
 }
 h1 {
-  font-size: 36px;
+  font-size: 48px;
+  line-height: 48px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 36px;
+  line-height: 48px;
 }
 h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 p {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
-strong {
-  font-weight: bold;
-}
-em {
-  font-style: italic;
-}
+
+/*
+  Links
+*/
+
 a {
-  color: #8ec63f;
+  color: #e4a467;
+  text-decoration: none;
 }
 a:hover {
-  color: #f7941d;
+  color: #c9905b;
 }
