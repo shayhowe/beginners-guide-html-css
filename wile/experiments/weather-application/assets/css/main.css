@@ -84,10 +84,6 @@ body {
   Typography
 */
 
-.headline {
-  font-size: 24px;
-  font-weight: 700;
-}
 .subheadline,
 .byline {
   color: #a9d7f5;
@@ -100,26 +96,7 @@ body {
   font-size: 12px;
 }
 
-/*
-  Links
-*/
-
-.link-feat {
-  font: 700 15px/24px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  -webkit-transition: all .15s linear;
-     -moz-transition: all .15s linear;
-       -o-transition: all .15s linear;
-          transition: all .15s linear;
-}
-
-
-
-
-
-
-
-
+/* Weather stage */
 
 .weather {
   background-color: #32a5f2;
@@ -140,21 +117,31 @@ body {
   width: 660px;
 }
 
+/* Days and temps */
+
 .day {
   border-left: 1px solid rgba(255, 255, 255, .2);
   border-right: 1px solid #217bb8;
   float: left;
-  padding: 24px;
+  padding: 24px 15px;
+  text-align: center;
+}
+
+.temps li {
+  float: left;
+  margin: 0 4px;
 }
 
 
 
 
-
-
+/* Featured day */
 
 .feat-day {
-  width: 259px;
+  float: left;
+  padding-left: 23px;
+  padding-right: 23px;
+  width: 180px;
 }
 .feat-headings {
   float: left;
@@ -162,6 +149,8 @@ body {
 .feat-temps {
   float: right;
 }
+
+
 .feat-temp {
   font-size: 72px;
   font-weight: 500;
@@ -169,8 +158,23 @@ body {
 
 
 
+/* Icons */
 
-
-
+.i {
+  background: url("../img/sprite.png") 0 0 no-repeat;
+  font: 0/0 a;
+  height: 47px;
+  margin: 18px auto;
+  width: 49px;
+}
+.i-partly-cloudy {
+  background-position: 0 -47px;
+}
+.i-cloudy {
+  background-position: 0 -94px;
+}
+.i-rainy {
+  background-position: 0 -141px;
+}
 
 
