@@ -82,9 +82,6 @@ sup {
   margin-left: 10px;
   margin-right: 10px;
 }
-.baseline-bottom {
-  margin-bottom: 24px;
-}
 
 /*
   Clearfix
@@ -142,14 +139,11 @@ h3,
 h4,
 .h-standfirst {
   font-size: 21px;
+  margin-bottom: 24px;
 }
 h5,
 .h-related {
   font-size: 18px;
-}
-h6,
-.h-promo {
-  font-size: 16px;
 }
 p {
   margin-bottom: 24px;
@@ -322,7 +316,6 @@ ul {
 */
 
 .primary-footer {
-  clear: both;
   margin: 48px 0;
   text-align: center;
 }

@@ -23,16 +23,8 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 body {
   line-height: 1;
-}
-ol, ul {
-  list-style: none;
 }
 blockquote, q {
   quotes: none;
@@ -68,7 +60,44 @@ sup {
 
 .container {
   max-width: 960px;
-  margin: 48px auto;
+  margin: 0 auto;
+}
+.col-1,
+.col-2,
+.col-3 {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.col-1 {
+  width: 220px;
+}
+.col-2 {
+  width: 460px;
+}
+.col-3 {
+  width: 700px;
+}
+.gutters {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*
+  Clearfix
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
 }
 
 /*
@@ -88,8 +117,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #965d51;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin-bottom: 24px;
+  font-weight: 700;
 }
 h1 {
   font-size: 48px;
@@ -102,7 +130,13 @@ h2 {
 h3 {
   font-size: 24px;
 }
-p {
+h4 {
+  font-size: 21px;
+}
+h5 {
+  font-size: 18px;
+}
+h2, h3, h4, p {
   margin-bottom: 24px;
 }
 
@@ -122,6 +156,76 @@ a:hover {
   List
 */
 
-ul {
+.list-compact {
+  list-style: none;
+}
+.list-cols {
   margin-bottom: 24px;
+}
+.list-cols li {
+  float: left;
+  margin: 0 20px;
+  width: 200px;
+}
+.list-cols li:nth-child(3n) {
+  margin-right: 0;
+}
+
+/*
+  Misc styles
+*/
+
+.divider {
+  border-bottom: 2px solid #e4de9a;
+  margin-bottom: 47px;
+  padding-bottom: 23px;
+}
+
+/*
+  Primary header
+*/
+
+.primary-header {
+  background: #e4a467;
+  border-bottom: 2px solid #c9905b;
+  margin-bottom: 48px;
+  padding: 23px 0;
+}
+
+/* Logo */
+
+.primary-logo {
+  float: left;
+  margin-left: 10px;
+}
+.primary-logo a {
+  color: #fff;
+}
+.primary-logo a:hover {
+  color: #965d51;
+}
+
+/* Nav */
+
+.primary-nav {
+  float: right;
+  margin-top: 21px;
+}
+.primary-nav li {
+  float: left;
+  margin: 0 10px;
+}
+.primary-nav a {
+  color: #965d51;
+}
+.primary-nav a:hover {
+  color: #fff;
+}
+
+/*
+  Primary footer
+*/
+
+.primary-footer {
+  margin: 48px 0;
 }
