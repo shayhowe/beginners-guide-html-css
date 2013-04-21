@@ -184,7 +184,7 @@ a:hover {
   color: #c9905b;
 }
 .link-feat {
-  font: 700 15px/1 "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 700 15px/26px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -236,10 +236,6 @@ ul {
   height: 336px;
   margin: 0 20px 24px 0;
   width: 460px;
-}
-.media-block {
-  margin-bottom: 18px;
-  max-width: 100%;
 }
 
 /*

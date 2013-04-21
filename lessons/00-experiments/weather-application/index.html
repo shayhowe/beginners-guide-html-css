@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Weather Application - Wile E. Coyote</title>
+    
+    <meta name="description" content="Weather application experiment, built by Wile E. Coyote.">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|PT+Serif:400,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <article class="weather group">
+
+      <!-- Featured day -->
+
+      <section class="day feat-day">
+
+        <div class="group">
+
+          <div class="feat-headings">
+            <h1>Chicago</h1>
+            <h3 class="subheadline">Today</h3>
+          </div>
+
+          <ul class="feat-temps">
+            <li>
+              <span class="byline">H:</span> 81&deg;
+            </li>
+            <li class="subheadline">
+              <span class="byline">L:</span> 63&deg;
+            </li>
+          </ul>
+
+        </div>
+
+        <h2 class="feat-temp">
+          <span class="temp">
+            75&deg;
+            <span class="i">Sunny</span>
+          </span>
+        </h2>
+      
+      </section>
+
+      <!-- Extended forcast -->
+
+      <ol class="group">
+
+        <li class="day">
+          <h3>Tue</h3>
+          <div class="i i-partly-cloudy">Partly Cloudy</div>
+          <ul class="temps">
+            <li>79&deg;</li>
+            <li class="subheadline">56&deg;</li>
+          </ul>
+        </li>
+
+        <li class="day">
+          <h3>Wed</h3>
+          <div class="i i-rainy">Rainy</div>
+          <ul class="temps">
+            <li>72&deg;</li>
+            <li class="subheadline">49&deg;</li>
+          </ul>
+        </li>
+
+        <li class="day">
+          <h3>Thu</h3>
+          <div class="i">Sunny</div>
+          <ul class="temps">
+            <li>85&deg;</li>
+            <li class="subheadline">68&deg;</li>
+          </ul>
+
+        <li class="day">
+          <h3>Fri</h3>
+          <div class="i i-cloudy">Cloudy</div>
+          <ul class="temps">
+            <li>78&deg;</li>
+            <li class="subheadline">59&deg;</li>
+          </ul>
+        </li>
+
+      </ol>
+
+    </article>
+
+    <p class="link-source">
+      <a href="https://github.com/shayhowe/beginners-guide-html-css/tree/master/lessons/01-terminology-syntax-introduction/reset">View Source</a>
+      /
+      <a href="lessons/01-terminology-syntax-introduction/reset/reset.zip">Download Source</a>
+    </p>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.9.1.min.js"><\/script>')</script>
+
+    <!-- Grid -->
+    <div id="grid"></div>
+    <style type="text/css"> #grid {background: url("assets/img/grid.png") 50% 0 repeat-y; display: none; height: 2000%; position: absolute; top: 0; width: 100%; z-index: 9999; } </style>
+    <script type="text/javascript"> $(document).bind('keydown', function(event) { if (event.which == 27) { event.preventDefault(); $('#grid').toggle(); } }); </script>
+
+  </body>
+</html>

@@ -192,9 +192,6 @@ a:hover {
   List
 */
 
-ul {
-  list-style: square;
-}
 .list-compact {
   list-style: none;
 }
@@ -211,38 +208,6 @@ ul {
 }
 
 /*
-  Media
-*/
-
-.avatar {
-  -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-       -o-border-radius: 50%;
-          border-radius: 50%;
-  display: block;
-  margin-bottom: 24px;
-}
-.avatar-block {
-  width: 96px;
-}
-.avatar-pulled {
-  float: right;
-  margin-left: 20px;
-  width: 144px;
-}
-.video-journal {
-  float: left;
-  height: 336px;
-  margin: 0 20px 24px 0;
-  width: 460px;
-}
-.media-block {
-  margin-bottom: 18px;
-  max-width: 100%;
-}
-
-/*
   Misc styles
 */
 
@@ -250,15 +215,6 @@ ul {
   border-bottom: 2px solid #e4de9a;
   margin-bottom: 47px;
   padding-bottom: 23px;
-}
-.lessons {
-  margin: 20px 0 0 0;
-}
-.lessons h2 {
-  margin: 20px 0 ;
-}
-.lessons ul {
-  padding: 0 0 0 50px;
 }
 
 /*
@@ -302,7 +258,6 @@ ul {
   float: left;
   margin: 0 10px;
 }
-
 .primary-nav a {
   color: #965d51;
   font: 700 18px/24px "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;

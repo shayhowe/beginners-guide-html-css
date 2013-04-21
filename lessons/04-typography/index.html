@@ -9,13 +9,105 @@
     
     <meta name="description" content="The home of Wile E. Coyote while completing the beginners guide to HTML and CSS.">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/main.css">
+
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|PT+Serif:400,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
 
   </head>
   <body>
 
-    <h1>Wile E. Coyote</h1>
-    <p>Coming soon.</p>
+    <!-- Primary header -->
+
+    <header class="primary-header group">
+      <div class="container">
+
+        <h1 class="primary-logo">
+          <a href="index.html">
+            Wile E. Coyote <span class="h-standfirst">Have Brain. Will Travel.</span>
+          </a>
+        </h1>
+
+        <nav class="primary-nav">
+          <ul class="list-compact">
+            <li class="nav-active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+            <li><a href="journal.html">Journal</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <div class="container">
+
+      <!-- Welcome -->
+
+      <section class="divider gutters">
+
+        <h2>Genius</h2>
+
+        <p class="text-intro">Wile E. Coyote is a <em>true genius</em> and aspiring front end designer and developer. When he&#8217;s not trapping the enchanting road runner he is wrangling code and designing beautiful websites.</p>
+
+        <p><a class="link-feat" href="about.html">View Wile E. Coyote&#8217;s Accomplishments &raquo;</a></p>
+
+      </section>
+
+      <!-- Experiments -->
+
+      <section class="divider group">
+
+        <h2 class="gutters">Experiments</h2>
+
+        <div class="col-2">
+          <h4><a href="experiments.html#link-weather-application">Weather Application</a></h4>
+          <p>Paying attention to the typographic scale, this weather application experiment is meant to exercise a handful of the different <code>font</code> and <code>text</code> based CSS properties.</p>
+          <p><a class="link-feat" href="experiments.html#link-weather-application">View Weather Application Experiment &raquo;</a></p>
+        </div>
+
+        <div class="col-2">
+          <h4>Coming Soon</h4>
+          <p>More experiments will be added in the coming weeks, please stay tuned.</p>
+        </div>
+
+      </section>
+
+      <!-- Journal -->
+
+      <section class="group">
+
+        <h2 class="gutters">Journal</h2>
+
+        <div class="col-1">
+          <h4><a href="journal.html#link-why-cant-i-catch-this-bird">Why Can&#8217;t I Catch this Bird?</a></h4>
+          <p>I&#8217;ve struggled for so long to capture this one illusive&hellip;</p>
+          <p><a class="link-feat" href="journal.html#link-why-cant-i-catch-this-bird">Continue Reading &raquo;</a></p>
+        </div>
+
+        <div class="col-1">
+          <h4><a href="journal.html#link-construction-acme-apex">Construction, Acme, Apex</a></h4>
+          <p>Warner University preaches itself as the <i>&#8216;apex&#8217;</i> of&hellip;</p>
+          <p><a class="link-feat" href="journal.html#link-construction-acme-apex">Continue Reading &raquo;</a></p>
+        </div>
+
+        <div class="col-1">
+          <h4><a href="journal.html#link-bird-flu">Bird Flu</a></h4>
+          <p>Like Darwin I&#8217;ve became fascinated with birds. Their&hellip;</p>
+          <p><a class="link-feat" href="journal.html#link-bird-flu">Continue Reading &raquo;</a></p>
+        </div>
+
+      </section>
+
+      <!-- Primary footer -->
+
+      <footer class="primary-footer">
+        <small class="text-offset"><a href="../../index.html">&larr; Return to the Coursework</a> &mdash; &copy; Copyright Wile E. Coyote</small>
+      </footer>
+
+    </div>
 
   </body>
 </html>
