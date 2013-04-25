@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My styles */
+
+@font-face {
+  /* 
+   * Note: I'm not including the actual font here,
+   * because I don't know if I'm licensed to use it as
+   * a web font. But, I'm leaving this in, so you know
+   * how a font-face declaration works.
+   */
+  font-family: "Metal Lord!!!";
+  src: url('../fonts/metal lord.ttf') format('truetype');
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+header,
+footer,
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+article {
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+}
+
+aside {
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+
+/* General */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+p {
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul { 
+  list-style: none;
+}
+
+li { 
+  margin-bottom: 20px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* 
+   * Since the Metal Lord font isn't included,
+   * the declaration will fail, and try loading
+   * Helvetica
+   *
+   * Scroll up for more details....
+   */
+  font-family: "Metal Lord!!!", "Open Sans" Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: red;
+
+  text-shadow: 2px 2px 0 orange,
+               4px 4px 0 yellow,
+               6px 6px 0 blue;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+article.intro p {
+  line-height: 24px;
+  text-indent: 20px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justified {
+  text-align: justify;
+}
