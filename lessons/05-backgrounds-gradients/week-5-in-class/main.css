@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+
+/* Custom styles */
+
+html {
+  height: 100%;
+}
+body {
+  background: #1f2dcc url("http://www.funwirks.com/Resources/ProductPhotos/C186_Mr_T_Costume.JPG") 600px 100px no-repeat;
+  height: 100%;
+}
+
+div,
+p {
+  margin: 40px;
+}
+
+div {
+  background-color: orange;
+  background-image: -ms-radial-gradient(center top, circle farthest-side, #fff 0%, #344551 50%, #8492d1 75%, #00a3ef 100%);
+  background-image: -moz-radial-gradient(center top, circle farthest-side, #fff 0%, #344551 50%, #8492d1 75%, #00a3ef 100%);
+  background-image: -o-radial-gradient(center top, circle farthest-side, #fff 0%, #344551 50%, #8492d1 75%, #00a3ef 100%);
+  background-image: -webkit-gradient(radial, center top, 0, center top, 477, color-stop(0, #fff), color-stop(0.5, #344551), color-stop(0.75, #8492d1), color-stop(1, #00a3ef));
+  background-image: -webkit-radial-gradient(center top, circle farthest-side, #fff 0%, #344551 50%, #8492d1 75%, #00a3ef 100%);
+  background-image: radial-gradient(circle farthest-side at center top, #fff 0%, #344551 50%, #8492d1 75%, #00a3ef 100%);
+  height: 300px;
+  width: 300px;
+}
+
+a {
+  /*background: url("http://p.yusukekamiyamane.com/icons/search/fugue/icons/thumb-up.png") 20px 50% no-repeat, linear-gradient(#FFC400, #916F00);*/
+  background: url("http://p.yusukekamiyamane.com/icons/search/fugue/icons/thumb-up.png") 20px 50% no-repeat, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+  background-color: #f60;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 2px 3px rgba(0, 0, 0, .5);
+  color: #fff;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px 20px 10px 50px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  transition: all .5s ease-in-out;
+}
+a:hover {
+  /*background: url("http://p.yusukekamiyamane.com/icons/search/fugue/icons/thumb-up.png") 20px 50% no-repeat, linear-gradient(#FFDA61, #BA951E);*/
+  color: yellow;
+  background-color: #fff;
+}
