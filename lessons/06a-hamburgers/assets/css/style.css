@@ -176,9 +176,20 @@ nav ol > .active > a:after {
 
 .tab-pane.active {
   opacity: 1;
+  z-index: 9999;
 }
 
 /*-----  LIST STYLES  --------------------------------------------------*/
+
+.tab-pane a {
+  display: inline-block;
+  margin-top: 2em;
+  color: #368;
+}
+
+.tab-pane a:hover {
+  color: #123;
+}
 
 .tab-pane ol,
 .tab-pane ul,
