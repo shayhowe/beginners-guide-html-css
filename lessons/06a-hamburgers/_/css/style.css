@@ -1,0 +1,331 @@
+/*-----  COLOR GUIDE  --------------------------------------------------
+
+    Black:  #1a1a1a  |  rgba(26,26,26,0.0)
+      Red:  #e61739  |  rgba(230,23,57,0.0)
+ Dark-Red:  #990f26  |  rgba(153,15,38,0.0)
+Light-Red:  #e55c73  |  rgba(299,92,115,0.0)
+   Yellow:  #fffdf2  |  rgba(255,253,242,0.0)
+
+----------------------------------------------------------------------*/
+
+
+
+/*-----  BASE STYLES  --------------------------------------------------*/
+
+a {
+	-webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+html {
+  font: 62.5% 'Helvetica Neue', Helmet, Freesans, sans-serif;
+  line-height: 1;
+  background: #e8e8ce;
+}
+
+body {
+  padding: 25px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+  color: #999;
+}
+
+/*-----  NAV  --------------------------------------------------*/
+
+nav {
+  margin: auto;
+  text-align: center;
+}
+
+nav a {
+  color: #999962;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav li:first-child a {
+  text-indent: -9999px;
+  width: 10px;
+  overflow: hidden;
+  background: transparent url(../img/home.png) 10px 8px no-repeat !important;
+  -webkit-box-shadow: none !important;
+}
+
+
+/*-----  TITLE  --------------------------------------------------*/
+
+#hamburgers {
+  text-align: center;
+  background: transparent;
+  -webkit-box-shadow: none;
+}
+
+#hamburgers h1 {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 12em;
+  padding-top: 0.75em;
+  color: #368;
+  text-transform: uppercase;
+}
+
+
+/*-----  BOOTSTRAP TABS  --------------------------------------------------*/
+
+nav ol {
+  margin-left: 0;
+  margin-bottom: 18px;
+  list-style: none;
+}
+nav ol > li > a {
+  display: block;
+}
+nav ol > li > a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 4px #72673b;
+}
+nav ol {
+  *zoom: 1;
+}
+nav ol:before,
+nav ol:after {
+  display: table;
+  content: "";
+}
+nav ol:after {
+  clear: both;
+}
+nav ol > li {
+  display: inline-block;
+  margin: 0 1em;
+}
+nav ol > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+nav ol > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+nav ol > .active > a,
+nav ol > .active > a:hover {
+  color: #ffffff;
+  background-color: #999962;
+  position: relative;
+  -webkit-box-shadow: none;
+}
+
+nav ol > .active > a:after {
+  content: '';
+  border-top: 10px solid #999962;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.tab-content {
+  width: 70%;
+  position: relative;
+  margin: 2.5% auto;
+}
+
+.tab-pane {
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 5%;
+  background: #fff;
+  -webkit-box-shadow: inset 0 0 5px #999962;
+  border-radius: 20px;
+	-webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.tab-pane.active {
+  opacity: 1;
+}
+
+/*-----  LIST STYLES  --------------------------------------------------*/
+
+.tab-pane ol,
+.tab-pane ul,
+.tab-pane dl {
+  float: left;
+  display: inline;
+  width: 50%;
+  list-style-type: none;
+}
+
+.tab-pane li {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bun {
+  color: #d4d496;
+  font-family: 'Roboto';
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 4.1em;
+  line-height: 0.7;
+}
+
+.condiment {
+  font-family: 'Titillium Web';
+  letter-spacing: 4px;
+}
+
+.ketchup {
+  color: #f00;
+  font-size: 6.35em;
+  font-weight: 300;
+}
+
+.mustard {
+  color: #a8a808;
+  font-size: 3.25em;
+  font-weight: 700;
+}
+
+.veggie {
+  font-family: 'Roboto';
+  letter-spacing: 0;
+  padding-top: 0.1em;
+}
+
+.tomato {
+  color: #b8261b;
+  font-size: 4.1em;
+  font-weight: 900;
+}
+
+.lettuce {
+  color: #058b15;
+  font-size: 6.4em;
+  font-weight: 400;
+  line-height: 0.75;
+}
+
+.cheese {
+  font-family: 'Oswald';
+  font-weight: 700;
+  color: #cbcb02;
+  font-size: 7.4em;
+  letter-spacing: 1px;
+  line-height: 0.8;
+  padding-top: 0.2em;
+}
+
+.meat {
+  color: #72673b;
+  font-family: 'Titillium Web';
+  font-size: 6.5em;
+  font-weight: 900;
+  padding: 0.05em 0 0;
+}
+
+.bun.bottom {
+  padding-top: 0.2em;
+}
+
+#ordered-list .meat {
+  margin-bottom: -0.15em;
+}
+
+pre {
+  white-space: pre;
+  font-size: 1.4em;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+dt, dd {
+  line-height: 1 !important;
+}
+
+dt {
+  color: #999962;
+  margin: 1.5em 0 0.5em;
+  text-transform: uppercase;
+  font-family: 'Titillium Web';
+  font-weight: 900;
+  letter-spacing: 1px !important;
+  font-size: 2em !important;
+}
+
+dt:first-child {
+  margin-top: 0;
+}
+
+dd {
+  font-family: 'Helvetica Neue', Helmet, Freesans, sans-serif !important;
+  font-size: 2em !important; /* Override burger class sizes */
+  font-weight: 400 !important; /* Override burger class weight */
+  letter-spacing: 0 !important;
+  margin: 0 0 0.5em 0;
+}
+
+dd:before {
+  content: '❑';
+  color: #999962;
+  margin-right: 0.5em;
+}
+
+#nested-list .condiments,
+#nested-list .veggies {
+  margin: 2em 0;
+}
+
+#nested-list .condiments strong,
+#nested-list .veggies strong {
+  color: #ccc;
+  font-family: 'Titillium Web';
+  letter-spacing: 10px;
+  font-weight: 300;
+  font-size: 2.25em;
+  margin-bottom: 0.25em;
+  display: block;
+}
+
+#nested-list .condiments ul,
+#nested-list .veggies ul {
+  width: 100%;
+  float: none;
+}
+
+#nested-list .veggies ul {
+  margin-bottom: 1.4em;
+}
