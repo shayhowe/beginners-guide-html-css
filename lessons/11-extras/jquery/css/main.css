@@ -1,0 +1,41 @@
+/* Base */
+body {
+
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Layout */
+header,
+section {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Boxes */
+.boxes ul {
+  list-style: none;
+  padding: 0;
+}
+  
+  .boxes li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 10px 10px 0;
+    border-radius: 8px;
+    background: #8ec63f;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #333;
+    cursor: pointer;
+  }
+
+  .boxes li:hover {
+    background: #f7941d;
+  }
